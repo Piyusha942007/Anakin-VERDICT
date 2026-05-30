@@ -53,6 +53,19 @@ app.use((req, res, next) => {
 // Register routes
 app.use('/api/verdict', verdictRouter);
 
+// API Status Landing Endpoint
+app.get('/', (req, res) => {
+  res.json({
+    engine: 'VERDICT Decision Intelligence Engine',
+    status: 'online',
+    version: '1.0.0',
+    endpoints: {
+      health: '/health',
+      verdict: '/api/verdict'
+    }
+  });
+});
+
 // Health check endpoint
 app.get('/health', (req, res) => {
   res.json({ status: 'healthy', timestamp: new Date().toISOString() });
