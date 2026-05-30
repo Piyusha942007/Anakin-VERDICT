@@ -1,0 +1,8 @@
+# Railway deployment configuration for Verdict Backend (if deployed with backend root directory)
+[build]
+builder = "RAILPACK"
+buildCommand = "npm run build"
+
+[deploy]
+startCommand = "npm run start"
+restartPolicyType = "ON_FAILURE"
