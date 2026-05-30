@@ -72,8 +72,13 @@ async function bootstrap() {
     
     app.listen(PORT, () => {
       logger.success(`===================================================`);
-      logger.success(` VERDICT Backend running on: http://localhost:${PORT}`);
+      logger.success(` VERDICT Backend listener active on port: ${PORT}`);
       logger.success(` Environment: ${process.env.NODE_ENV || 'development'}`);
+      if (process.env.RAILWAY_STATIC_URL) {
+        logger.success(` Public Gateway: https://${process.env.RAILWAY_STATIC_URL}`);
+      } else if (process.env.RAILWAY_PUBLIC_DOMAIN) {
+        logger.success(` Public Gateway: https://${process.env.RAILWAY_PUBLIC_DOMAIN}`);
+      }
       logger.success(`===================================================`);
     });
   } catch (error) {
