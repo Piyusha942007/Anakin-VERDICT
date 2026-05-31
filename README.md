@@ -6,7 +6,7 @@
 
 ### Stop deciding on vibes. Get a verdict.
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-verdict.vercel.app-7C3AED?style=for-the-badge&logo=vercel&logoColor=white)](https://verdict.vercel.app)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-verdict.vercel.app-7C3AED?style=for-the-badge&logo=vercel&logoColor=white)](https://anakin-verdict.vercel.app)
 [![Built with Wire](https://img.shields.io/badge/Powered%20by-Anakin%20Wire-06B6D4?style=for-the-badge)](https://anakin.io)
 [![Gemini](https://img.shields.io/badge/AI-Google%20Gemini-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://ai.google.dev)
 [![Hackathon](https://img.shields.io/badge/Anakin%20Build--a--thon-2026-10B981?style=for-the-badge)](https://anakin.io)
@@ -47,7 +47,7 @@ VERDICT takes any life dilemma in plain English and returns a structured, eviden
 
 ## Demo
 
-> **[▶ Try it live → verdict.vercel.app](https://verdict.vercel.app)**
+> **[▶ Try it live → verdict.vercel.app](https://anakin-verdict.vercel.app)**
 
 | Query | Decision Type | Sources Fired |
 |---|---|---|
